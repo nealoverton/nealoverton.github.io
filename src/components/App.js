@@ -12,8 +12,9 @@ function App() {
 
   const startNewGame = () => {
     const { phrase, category } = generatePhrase();
-    setCategory(category);
+
     setWord(phrase);
+    setCategory(category);
     setAttemptedLetters([]);
     setIsComplete(false);
   };
